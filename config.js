@@ -51,17 +51,21 @@ config = {
         url: 'http://stevemayszak.herokuapp.com',
         mail: {},
         database: {
-            client: 'sqlite3',
+            client: 'postgres',
             connection: {
-                filename: path.join(__dirname, '/content/data/ghost.db')
+                host: 'ec2-54-204-43-200.compute-1.amazonaws.com',
+                user: 'jwddvnhfmgmmgp',
+                password: 'GH9qiQ30DU1MdCzRuFOJcT5_HT',
+                database: 'd9llntendp7lc0',
+                port: '5432'
             },
             debug: false
         },
         server: {
             // Host to be passed to node's `net.Server#listen()`
-            host: '127.0.0.1',
+            host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: '2368'
+            port: 'process.env.PORT'
         }
     },
 
