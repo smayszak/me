@@ -10,22 +10,6 @@ config = {
     development: {
         // The url to use when providing links to the site, E.g. in RSS and email.
         url: 'http://my-ghost-blog.com',
-
-        // Example mail config
-        // Visit http://support.ghost.org/mail for instructions
-        // ```
-        //  mail: {
-        //      transport: 'SMTP',
-        //      options: {
-        //          service: 'Mailgun',
-        //          auth: {
-        //              user: '', // mailgun username
-        //              pass: ''  // mailgun password
-        //          }
-        //      }
-        //  },
-        // ```
-
         database: {
             client: 'sqlite3',
             connection: {
@@ -65,7 +49,7 @@ config = {
             // Host to be passed to node's `net.Server#listen()`
             host: '0.0.0.0',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
-            port: 'process.env.PORT'
+            port: `process.env.PORT`
         }
     },
 
