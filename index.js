@@ -8,7 +8,7 @@ var ghost = require('./core'),
 ghost()
 .then(function (param) {
 	try{
-    require('./content/themes/techno/index')();
+    	require('./content/themes/techno/index')();
 	}catch(excep){
 		console.log('error loading techno');
 	}
