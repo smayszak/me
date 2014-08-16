@@ -2,10 +2,10 @@ var theme =
 {
     logo: '[YOUR LOGO]',
     author: {
-        github: 'https://github.com/smayszak',
+        github:  'https://github.com/smayszak',
         twitter: 'https://twitter.com/smayszak',
-        linkedin: 'http://linkedin.com/in/stevemayszak',
-        email: 'mailto:stevemayszak@gmail.com'
+        linkedin:'http://linkedin.com/in/stevemayszak',
+        email:   'mailto:stevemayszak@gmail.com'
     },
     disqus: {
         shortname: 'steve m'
